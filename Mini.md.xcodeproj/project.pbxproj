@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000101 /* main.swift */; };
+		A10000000000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000102 /* AppDelegate.swift */; };
+		A10000000000000000000003 /* BrowserWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000103 /* BrowserWindow.swift */; };
+		A10000000000000000000004 /* BrowserWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000104 /* BrowserWindowController.swift */; };
+		A10000000000000000000005 /* MarkdownRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000105 /* MarkdownRenderView.swift */; };
+		A10000000000000000000006 /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000106 /* MarkdownRenderer.swift */; };
+		A10000000000000000000007 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000107 /* ThemeManager.swift */; };
+		A10000000000000000000008 /* mermaid.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000108 /* mermaid.min.js */; };
+		A10000000000000000000009 /* markdown-light.css in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000109 /* markdown-light.css */; };
+		A1000000000000000000000A /* markdown-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000010A /* markdown-dark.css */; };
+		A1000000000000000000000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000010B /* Assets.xcassets */; };
+		A1000000000000000000000C /* ThemeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000010E /* ThemeTypes.swift */; };
+		A1000000000000000000000D /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000010F /* SettingsManager.swift */; };
+		A1000000000000000000000E /* MarkdownSearchSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000110 /* MarkdownSearchSupport.swift */; };
+		A1000000000000000000000F /* MarkdownSearchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000111 /* MarkdownSearchTarget.swift */; };
+		A10000000000000000000010 /* MarkdownEditorSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000112 /* MarkdownEditorSearchController.swift */; };
+		A10000000000000000000011 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000113 /* MarkdownEditorView.swift */; };
+		A10000000000000000000012 /* HighlightConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000114 /* HighlightConfiguration.swift */; };
+		A10000000000000000000013 /* HighlightConfigurationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000115 /* HighlightConfigurationStore.swift */; };
+		A10000000000000000000014 /* HighlightConfigurationMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000116 /* HighlightConfigurationMonitor.swift */; };
+		A10000000000000000000015 /* MarkdownLineClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000117 /* MarkdownLineClassifier.swift */; };
+		A10000000000000000000016 /* MarkdownKeywordHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000118 /* MarkdownKeywordHighlighter.swift */; };
+		A10000000000000000000017 /* MarkdownHTMLExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000119 /* MarkdownHTMLExporter.swift */; };
+		A20000000000000000000001 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000101 /* PreviewProvider.swift */; };
+		A20000000000000000000002 /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000106 /* MarkdownRenderer.swift */; };
+		A20000000000000000000003 /* ThemeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000010E /* ThemeTypes.swift */; };
+		A20000000000000000000004 /* mermaid.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000108 /* mermaid.min.js */; };
+		A20000000000000000000005 /* markdown-light.css in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000109 /* markdown-light.css */; };
+		A20000000000000000000006 /* markdown-dark.css in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000010A /* markdown-dark.css */; };
+		A20000000000000000000007 /* MiniMDQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A20000000000000000000103 /* MiniMDQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A20000000000000000000008 /* HighlightConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000114 /* HighlightConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A20000000000000000000D01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A20000000000000000000401;
+			remoteInfo = MiniMDQuickLook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A20000000000000000000204 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A20000000000000000000007 /* MiniMDQuickLook.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000101 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A10000000000000000000102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A10000000000000000000103 /* BrowserWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserWindow.swift; sourceTree = "<group>"; };
+		A10000000000000000000104 /* BrowserWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserWindowController.swift; sourceTree = "<group>"; };
+		A10000000000000000000105 /* MarkdownRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderView.swift; sourceTree = "<group>"; };
+		A10000000000000000000106 /* MarkdownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderer.swift; sourceTree = "<group>"; };
+		A10000000000000000000107 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		A10000000000000000000108 /* mermaid.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = mermaid.min.js; sourceTree = "<group>"; };
+		A10000000000000000000109 /* markdown-light.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "markdown-light.css"; sourceTree = "<group>"; };
+		A1000000000000000000010A /* markdown-dark.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "markdown-dark.css"; sourceTree = "<group>"; };
+		A1000000000000000000010B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000000000000000000010C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1000000000000000000010D /* Mini.md.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini.md.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000000000000000000010E /* ThemeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTypes.swift; sourceTree = "<group>"; };
+		A1000000000000000000010F /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		A10000000000000000000110 /* MarkdownSearchSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownSearchSupport.swift; sourceTree = "<group>"; };
+		A10000000000000000000111 /* MarkdownSearchTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownSearchTarget.swift; sourceTree = "<group>"; };
+		A10000000000000000000112 /* MarkdownEditorSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorSearchController.swift; sourceTree = "<group>"; };
+		A10000000000000000000113 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
+		A10000000000000000000114 /* HighlightConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightConfiguration.swift; sourceTree = "<group>"; };
+		A10000000000000000000115 /* HighlightConfigurationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightConfigurationStore.swift; sourceTree = "<group>"; };
+		A10000000000000000000116 /* HighlightConfigurationMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightConfigurationMonitor.swift; sourceTree = "<group>"; };
+		A10000000000000000000117 /* MarkdownLineClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownLineClassifier.swift; sourceTree = "<group>"; };
+		A10000000000000000000118 /* MarkdownKeywordHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownKeywordHighlighter.swift; sourceTree = "<group>"; };
+		A10000000000000000000119 /* MarkdownHTMLExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHTMLExporter.swift; sourceTree = "<group>"; };
+		A20000000000000000000101 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		A20000000000000000000102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000103 /* MiniMDQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MiniMDQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10000000000000000000201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20000000000000000000201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000301 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000302 /* Mini.md */,
+				A20000000000000000000301 /* MiniMDQuickLook */,
+				A10000000000000000000304 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000302 /* Mini.md */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000101 /* main.swift */,
+				A10000000000000000000102 /* AppDelegate.swift */,
+				A10000000000000000000103 /* BrowserWindow.swift */,
+				A10000000000000000000104 /* BrowserWindowController.swift */,
+				A10000000000000000000105 /* MarkdownRenderView.swift */,
+				A10000000000000000000110 /* MarkdownSearchSupport.swift */,
+				A10000000000000000000111 /* MarkdownSearchTarget.swift */,
+				A10000000000000000000112 /* MarkdownEditorSearchController.swift */,
+				A10000000000000000000113 /* MarkdownEditorView.swift */,
+				A10000000000000000000114 /* HighlightConfiguration.swift */,
+				A10000000000000000000115 /* HighlightConfigurationStore.swift */,
+				A10000000000000000000116 /* HighlightConfigurationMonitor.swift */,
+				A10000000000000000000117 /* MarkdownLineClassifier.swift */,
+				A10000000000000000000118 /* MarkdownKeywordHighlighter.swift */,
+				A10000000000000000000119 /* MarkdownHTMLExporter.swift */,
+				A10000000000000000000106 /* MarkdownRenderer.swift */,
+				A1000000000000000000010E /* ThemeTypes.swift */,
+				A10000000000000000000107 /* ThemeManager.swift */,
+				A1000000000000000000010F /* SettingsManager.swift */,
+				A10000000000000000000303 /* Resources */,
+				A1000000000000000000010B /* Assets.xcassets */,
+				A1000000000000000000010C /* Info.plist */,
+			);
+			path = "src/Mini.md";
+			sourceTree = "<group>";
+		};
+		A10000000000000000000303 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000108 /* mermaid.min.js */,
+				A10000000000000000000109 /* markdown-light.css */,
+				A1000000000000000000010A /* markdown-dark.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000010D /* Mini.md.app */,
+				A20000000000000000000103 /* MiniMDQuickLook.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A20000000000000000000301 /* MiniMDQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000101 /* PreviewProvider.swift */,
+				A20000000000000000000102 /* Info.plist */,
+			);
+			path = src/MiniMDQuickLook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000401 /* Mini.md */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000502 /* Build configuration list for PBXNativeTarget "Mini.md" */;
+			buildPhases = (
+				A10000000000000000000203 /* Sources */,
+				A10000000000000000000201 /* Frameworks */,
+				A10000000000000000000202 /* Resources */,
+				A20000000000000000000204 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A20000000000000000000D02 /* PBXTargetDependency */,
+			);
+			name = "Mini.md";
+			productName = "Mini.md";
+			productReference = A1000000000000000000010D /* Mini.md.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A20000000000000000000401 /* MiniMDQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20000000000000000000501 /* Build configuration list for PBXNativeTarget "MiniMDQuickLook" */;
+			buildPhases = (
+				A20000000000000000000203 /* Sources */,
+				A20000000000000000000201 /* Frameworks */,
+				A20000000000000000000202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniMDQuickLook;
+			productName = MiniMDQuickLook;
+			productReference = A20000000000000000000103 /* MiniMDQuickLook.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000601 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A10000000000000000000401 = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+					A20000000000000000000401 = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+				};
+			};
+			buildConfigurationList = A10000000000000000000501 /* Build configuration list for PBXProject "Mini.md" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000000000000000000301;
+			productRefGroup = A10000000000000000000304 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000401 /* Mini.md */,
+				A20000000000000000000401 /* MiniMDQuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000000000000000000202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000008 /* mermaid.min.js in Resources */,
+				A10000000000000000000009 /* markdown-light.css in Resources */,
+				A1000000000000000000000A /* markdown-dark.css in Resources */,
+				A1000000000000000000000B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20000000000000000000202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000004 /* mermaid.min.js in Resources */,
+				A20000000000000000000005 /* markdown-light.css in Resources */,
+				A20000000000000000000006 /* markdown-dark.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000000000000000000203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* main.swift in Sources */,
+				A10000000000000000000002 /* AppDelegate.swift in Sources */,
+				A10000000000000000000003 /* BrowserWindow.swift in Sources */,
+				A10000000000000000000004 /* BrowserWindowController.swift in Sources */,
+				A10000000000000000000005 /* MarkdownRenderView.swift in Sources */,
+				A10000000000000000000006 /* MarkdownRenderer.swift in Sources */,
+				A1000000000000000000000C /* ThemeTypes.swift in Sources */,
+				A10000000000000000000007 /* ThemeManager.swift in Sources */,
+				A1000000000000000000000D /* SettingsManager.swift in Sources */,
+				A1000000000000000000000E /* MarkdownSearchSupport.swift in Sources */,
+				A1000000000000000000000F /* MarkdownSearchTarget.swift in Sources */,
+				A10000000000000000000010 /* MarkdownEditorSearchController.swift in Sources */,
+				A10000000000000000000011 /* MarkdownEditorView.swift in Sources */,
+				A10000000000000000000012 /* HighlightConfiguration.swift in Sources */,
+				A10000000000000000000013 /* HighlightConfigurationStore.swift in Sources */,
+				A10000000000000000000014 /* HighlightConfigurationMonitor.swift in Sources */,
+				A10000000000000000000015 /* MarkdownLineClassifier.swift in Sources */,
+				A10000000000000000000016 /* MarkdownKeywordHighlighter.swift in Sources */,
+				A10000000000000000000017 /* MarkdownHTMLExporter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20000000000000000000203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000001 /* PreviewProvider.swift in Sources */,
+				A20000000000000000000002 /* MarkdownRenderer.swift in Sources */,
+				A20000000000000000000003 /* ThemeTypes.swift in Sources */,
+				A20000000000000000000008 /* HighlightConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A20000000000000000000D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A20000000000000000000401 /* MiniMDQuickLook */;
+			targetProxy = A20000000000000000000D01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10000000000000000000702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A10000000000000000000703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 49;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "src/Mini.md/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.11.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openai-codex.zhangzheng.minimd";
+				PRODUCT_NAME = "Mini.md";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 49;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "src/Mini.md/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.11.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openai-codex.zhangzheng.minimd";
+				PRODUCT_NAME = "Mini.md";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A20000000000000000000701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 49;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = src/MiniMDQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.11.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openai-codex.zhangzheng.minimd.quicklook";
+				PRODUCT_NAME = MiniMDQuickLook;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A20000000000000000000702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 49;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = src/MiniMDQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.11.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openai-codex.zhangzheng.minimd.quicklook";
+				PRODUCT_NAME = MiniMDQuickLook;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000501 /* Build configuration list for PBXProject "Mini.md" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000701 /* Debug */,
+				A10000000000000000000702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000502 /* Build configuration list for PBXNativeTarget "Mini.md" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000703 /* Debug */,
+				A10000000000000000000704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20000000000000000000501 /* Build configuration list for PBXNativeTarget "MiniMDQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20000000000000000000701 /* Debug */,
+				A20000000000000000000702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000601 /* Project object */;
+}
