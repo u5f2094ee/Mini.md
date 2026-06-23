@@ -1,0 +1,116 @@
+{
+  // defaultTheme: options are "system", "light", "dark".
+  // Controls the theme used when Markdown is rendered.
+  "defaultTheme": "dark",
+
+  // themeColors: custom foreground/background colors for each resolved document theme.
+  // Supported hex formats are "#RRGGBB", "RRGGBB", "#RGB", or "RGB".
+  // Invalid or missing color fields fall back independently.
+  "themeColors": {
+    "light": {
+      "foreground": "#2F2F2F",
+      "background": "#FDFDFA"
+    },
+    "dark": {
+      "foreground": "#D2D2CF",
+      "background": "#1D1D1E"
+    }
+  },
+
+  // defaultOpenMode: options are "render" or "edit".
+  // Used when no fileOpenModeRules entry matches the Markdown file name.
+  "defaultOpenMode": "edit",
+
+  // fileOpenModeRules: ordered first-match-wins rules against the Markdown file name.
+  // matchType options are "exact", "prefix", "suffix", "contains", or "regex".
+  // Each rule can use "pattern": "..." or "patterns": ["...", "..."].
+  "fileOpenModeRules": [
+    {
+      "mode": "render",
+      "matchType": "prefix",
+      "pattern": "AI_"
+    },
+    {
+      "mode": "render",
+      "matchType": "exact",
+      "patterns": [
+        "AGENTS.md",
+        "HISTORY_LOG.md",
+        "MEMORY.md",
+        "WORKSPACE_MAP.md",
+        "WORKSPACES_MAP.md"
+      ]
+    }
+  ],
+
+  // themeToggleShortcut: examples are "command+t", "command+e", or "disabled".
+  // Controls the keyboard shortcut for toggling between light and dark themes.
+  "themeToggleShortcut": "command+t",
+
+  // refreshShortcut: examples are "command+r", "shift+command+r", or "disabled".
+  // Controls the keyboard shortcut for reloading the current Markdown file from disk.
+  "refreshShortcut": "command+r",
+
+  // defaultRenderZoom: number from 0.5 to 3.0. 1.0 means 100%.
+  // Used when no current remembered render zoom matches this configured default.
+  "defaultRenderZoom": 1.0,
+
+  // defaultEditZoom: number from 0.71 to 2.0. 1.0 means the normal editor font size.
+  // Used as the initial edit-mode text zoom ratio.
+  "defaultEditZoom": 1.1,
+
+  // zoomInShortcut: examples are "command+=", "command+plus", or "disabled".
+  // Controls the keyboard shortcut for rendered-content page zoom in.
+  // editSyntaxHighlightingEnabled: options are true or false.
+  // Enables syntax highlighting while editing Markdown source text.
+  // Colors and rules are configured in ~/Mini.md/highlight.json.
+  "editSyntaxHighlightingEnabled": true,
+  // renderSyntaxHighlightingEnabled: options are true or false.
+  // Enables highlight.json colors/rules in rendered preview mode.
+  // highlight.json stores light/dark colors for Markdown structures, inline spans, and literal keyword rules.
+  // Markdown syntax markers that disappear after rendering, such as ``` fences, are not visible in render mode.
+  "renderSyntaxHighlightingEnabled": false,
+
+  // htmlExport: controls direct Markdown-to-HTML export with Command-Shift-E.
+  // defaultZoom scales exported text, headings, tables, code, and print typography while keeping page width stable.
+  // 1.0 means normal size; smaller values fit more content.
+  // contentWidthPX controls the browser/screen content width. 980 matches the previous default.
+  // printMarginMM controls A4 print margins on all four sides. Smaller values reduce blank paper edges.
+  "htmlExport": {
+    "defaultZoom": 1.0,
+    "contentWidthPX": 1400,
+    "printMarginMM": 3
+  },
+
+  
+  "zoomInShortcut": "command+=",
+
+  // zoomOutShortcut: examples are "command+-", "command+minus", or "disabled".
+  // Controls the keyboard shortcut for rendered-content page zoom out.
+  "zoomOutShortcut": "command+-",
+
+  // singleInstancePerFile: options are true or false.
+  // When true, opening the same real Markdown file again activates the existing window.
+  "singleInstancePerFile": true,
+
+  // rememberWindowFrame: options are true or false.
+  // When true, the app reuses the last saved window position and size.
+  "rememberWindowFrame": true,
+
+  // rememberContentZoom: options are true or false.
+  // When true, Cmd+= and Cmd+- page zoom changes are reused by new Markdown windows.
+  "rememberContentZoom": true,
+
+  // tabsEnabled: options are true or false.
+  // When true, Markdown files opened on the same active macOS desktop are added as tabs to an existing Mini.md window.
+  // Windows on other desktops are not reused.
+  "tabsEnabled": false,
+
+  // keepAliveAfterLastWindowClosed: options are true or false.
+  // When true, Mini.md keeps its app process alive after the last window closes to reduce later launch overhead.
+  "keepAliveAfterLastWindowClosed": true,
+
+  // keepAliveIdleTimeoutSeconds: number of seconds, 0 disables the timeout.
+  // Used only when keepAliveAfterLastWindowClosed is true. Only one idle Mini.md process is kept warm.
+  "keepAliveIdleTimeoutSeconds": 300
+}

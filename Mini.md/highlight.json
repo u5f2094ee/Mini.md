@@ -1,0 +1,114 @@
+{
+  "enabled": true,
+  "light": {
+    "markdown": {
+      "heading1": "#8AA2B8",
+      "heading2": "#8EAEAF",
+      "heading3": "#92BAA6",
+      "heading4": "#91AB9E",
+      "heading5": "#91AB9E",
+      "heading6": "#91AB9E",
+      "unorderedList": "#FADC9B",
+      "orderedList": "#FADC9B",
+      "quote": "#C7D395"
+    },
+    "inline": {
+      "quotedText": "#C7D395",
+      "boldText": "#B88FB2",
+      "inlineCode": "#C7D395"
+    },
+    "keywords": [
+      {
+        "keyword": "```",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```swift",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```bash",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```json",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```mermaid",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```text",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "---",
+        "scope": "keyword",
+        "color": "#C18180"
+      }
+    ]
+  },
+  
+  "dark": {
+    "markdown": {
+      "heading1": "#8AA2B8",
+      "heading2": "#8EAEAF",
+      "heading3": "#92BAA6",
+      "heading4": "#91AB9E",
+      "heading5": "#91AB9E",
+      "heading6": "#91AB9E",
+      "unorderedList": "#FADC9B",
+      "orderedList": "#FADC9B",
+      "quote": "#C7D395"
+    },
+    "inline": {
+      "quotedText": "#C7D395",
+      "boldText": "#B88FB2",
+      "inlineCode": "#C7D395"
+    },
+    "keywords": [
+      {
+        "keyword": "```",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```swift",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```bash",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```json",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```mermaid",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "```text",
+        "scope": "keyword",
+        "color": "#C18180"
+      },
+      {
+        "keyword": "---",
+        "scope": "keyword",
+        "color": "#C18180"
+      }
+    ]
+  }
+}
